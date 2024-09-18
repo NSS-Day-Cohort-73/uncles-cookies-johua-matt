@@ -87,11 +87,23 @@ const database = {
 }
 
 export const useIceCream = () => {
-      let iceCreamArr = database.iceCream.slice()
-      return iceCreamArr
+  let iceCreamArr = database.iceCream.toSorted((a, b) => {
+    const nameA = a.name
+    const nameB = b.name
+    if (nameA < nameB) {return -1}
+    if (nameA > nameB) {return 1}
+    return 0
+  })
+  return iceCreamArr
 }
 
 export const useCookies = () => {
-  let cookiesArr = database.cookies.slice()
+  let cookiesArr = database.cookies.toSorted((a, b) => {
+    const nameA = a.name
+    const nameB = b.name
+    if (nameA < nameB) {return -1}
+    if (nameA > nameB) {return 1}
+    return 0
+  })
   return cookiesArr
 }
