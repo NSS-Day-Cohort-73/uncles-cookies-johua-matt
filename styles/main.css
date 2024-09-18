@@ -1,13 +1,21 @@
+ 
 header {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
+    font-family: "Emilys candy", serif;
     margin: 30px 0 80px 0;
+    color: #c34bf7;
+    text-shadow: 0 0 2px black;
+}
+
+body {
+    background-image: linear-gradient(to right, #f250c7 , #03e8fc);
+    color: #faf6f6
 }
 
 #container {
     display: flex;
-    
     
 }
 
@@ -15,22 +23,22 @@ header {
 .iceCreamCard {
     display: flex;
     max-width: 400px;
-    border: 2px solid black;
+    border: 2px dashed #f250c7;
     border-radius: 8px;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cookieCard {
     display: flex;
     max-width: 400px;
-    border: 2px solid black;
+    border: 2px dotted #03e8fc;
     border-radius: 8px;
     padding: 10px;
-    
-    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#cookies {
+#cookies, #icecream {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -38,49 +46,41 @@ header {
 
 }
 
-#icecream {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-     
-}
-
-.iceCreamPic {
+.iceCreamPic, .cookiePic {
     width: 200px;
     margin-right: 10px;
 }
 
-.cookiePic {
-    width: 200px;
-    margin-right: 10px;
-}
 
-#cookiesAnything {
+#cookiesAnything, #iceCreamAnything {
     display: flex;
     flex-direction: column;
 
-}
-
-#iceCreamAnything {
-    display: flex;
-    flex-direction: column;
 }
 
 #cookieHeader {
     text-align: center;
+    font-family: cursive;
+    color: #03e8fc;
+    text-shadow: 0 0 2px black;
 }
 
 #iceCreamHeader {
     text-align: center;
+    font-family: cursive;
+    color: #f250c7;
+    text-shadow: 0 0 2px black;
 }
 
-.cookieName  {
+.cookieName, .iceCreamName  {
     font-weight: bold;
     margin-bottom: 12px;
+    font-family: cursive;
 }
 
-.iceCreamName  {
-    font-weight: bold;
-    margin-bottom: 12px;
+
+.iceCreamInfo, .cookieInfo {
+    font-style: italic;
+    font-family: sans-serif;
 }
+
