@@ -85,3 +85,8 @@ const database = {
     },
   ],
 }
+
+export const useIceCream = () => {
+      let iceCreamArr = database.iceCream.slice()
+      return iceCreamArr
+}
