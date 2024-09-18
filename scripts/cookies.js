@@ -4,7 +4,7 @@ export const cookieList = () => {
 
     const cookieInfo = useCookies()
 
-    let cookiesHTML = " "
+    let cookiesHTML = ""
 
     for (const flavor of cookieInfo) {
         cookiesHTML += `
