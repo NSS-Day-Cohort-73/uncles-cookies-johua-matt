@@ -90,3 +90,8 @@ export const useIceCream = () => {
       let iceCreamArr = database.iceCream.slice()
       return iceCreamArr
 }
+
+export const useCookies = () => {
+  let cookiesArr = database.cookies.slice()
+  return cookiesArr
+}
